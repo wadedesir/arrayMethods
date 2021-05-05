@@ -47,7 +47,6 @@ ie:
 ### sort():
 The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 
-## The time and space complexity of the sort cannot be guaranteed as it depends on the implementation.
 
 ie:
 [2, 1, 3].sort((a, b) => a - b) returns [1, 2, 3]
@@ -118,6 +117,130 @@ Ie:
 [1, 2, 3].every( num => num > 1) returns false
 
 ### charAt():
-Returns the index of the given character in the string
+Returns the character at the given index in the string
 
-“Good morning”
+ie:
+“Good morning”.charAt(2) returns 'o'
+“Good morning”.charAt(3) returns 'd'
+“Good morning”.charAt(5) returns 'm'
+
+
+### charCodeAt():
+Returns the character code at the given index in the string
+
+ie:
+“Good morning”.charAt(2) returns 79
+“Good morning”.charAt(2) returns 68
+“Good morning”.charAt(2) returns 77
+
+
+### concat():
+concatenates characters to the end of a string
+
+ie:
+"test".concat('o') returns "testo'
+"test".concat('s') returns "tests'
+"test".concat(' aye') returns "test aye'
+
+### includes():
+checks to see if string includes specific character
+
+ie:
+"test".includes(t) returns true
+"lol".includes(l) returns true
+"test".includes(l) returns false
+
+### indexOf():
+returns the index of character in a string
+
+ie:
+"test".indexOf(t) returns 0
+"stop".indexOf(p) returns 3
+"index".indexOf(d) returns 2
+
+### match():
+The match() method retrieves the result of matching a string against a regular expression.
+
+ie:
+
+### repeat():
+The repeat() method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
+
+ie:
+"test".repeat(3) returns "test test test"
+
+"hi".repeat(4) returns "hi hi hi hi"
+
+"21".repeat(3) returns "21 21 21"
+
+### replace():
+replaces specified substring with new characters
+
+ie:
+"Hi test".replace(test, wade) returns 'Hi wade'
+
+"a b c d z".replace(z, e) returns 'a b c d e'
+
+"wassup".replace(wassup, hi) returns 'Hi'
+
+### search():
+The search() method executes a search for a match between a regular expression and this String object.
+
+### slice():
+The slice() method extracts a section of a string and returns it as a new string, without modifying the original string.
+
+ie:
+"ayo".slice(1) returns "yo"
+
+"hi friend".slice(2) returns 'friend'
+
+"hahaha".slice(4) returns 'ha'
+
+### split():
+The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.  
+
+ie:
+"hi friend".split(' ') returns [hi, friend]
+
+'a,b,c'.split(',') returns [a, b, c]
+
+'wow'.split('') returns [w, o, w]
+
+### substr():
+The substr() method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards.
+
+ie:
+"test".substr(1, 2) returns 'es'
+
+"friend".substr(1, 4) returns 'rien'
+
+"lalala".substr(0, 2) returns 'la'
+
+### toLowerCase():
+Sets all letters of a string to lowercase letters
+
+ie:
+'Hi Friend'.toLowerCase() returns 'hi friend'
+
+'HAHAHA'.toLowerCase() returns 'hahaha'
+
+'WOW'.toLowerCase() returns 'wow'
+
+### toUpperCase():
+Sets all letters of a sring to uppercase letters
+
+ie:
+'lalala'.toUpperCase() returns 'LALALA'
+
+'surprise'.toUpperCase() returns 'SURPRISE'
+
+'hello'.toUppercase() returns 'HELLO'
+
+
+### trim():
+removes whitespace from the start and end of a string
+
+ie:
+'test '.trim() returns 'test'
+' trim '.trim() returns 'trim'
+' a b c '.trim() returns 'a b c'
