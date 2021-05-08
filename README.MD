@@ -1,6 +1,6 @@
 # Array Methods
 
-### map: 
+### 0(n) map: 
 remaps array values to something new based on a pattern.
 
 ### MDN:
@@ -11,7 +11,7 @@ ie:
 [a, b, c].map(x => x+ 'X') returns [aX, bX, cX]
 [1, 2, 3].map(x => x * 2) returns [2, 4, 6]
 
-### reduce:
+### 0(n) reduce:
 takes in an array and returns a new value.
 
 arguments are: 
@@ -26,7 +26,7 @@ ie:
 
 [1, 2, 3, 4].reduce()
 
-### filter:
+### 0(n) filter:
 filters items in an array by a specific criteria. 
 
 ie:
@@ -36,7 +36,7 @@ ie:
 
 [2, 3, 4, 7, 8, 9].filter( x => x < 7) returns: [2, 3, 4]
 
-### forEach():
+### 0(n) forEach():
 iterates through every value in an array and sets it to a variable that is usable withing the function
 
 ie:
@@ -44,14 +44,14 @@ ie:
  console.log(val)
 }) returns "a" "b" "c" in console
 
-### sort():
+###  0(n log(n)) sort():
 The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 
 
 ie:
 [2, 1, 3].sort((a, b) => a - b) returns [1, 2, 3]
 
-### Slice:
+### O(n) Slice:
 takes part of an array and returns a new array
 
 ie:
@@ -59,14 +59,14 @@ ie:
 [1, 2, 3, 4].slice(2) returns [3, 4]
 [a, b, c].slice(1) returns [b, c]
 
-### pop:
+###  0(1) pop:
 removes last element from an array and returns it as a value
 
 [1, 2, 3, 4].pop() returns 4 and the array is set to [1, 2, 3]
 [1, 2, 3].pop() returns 3 and the array is set to [1, 2]
 [a, b, c].pop() returns c and the array is set to [a, b]
 
-### shift():
+###  0(n) shift():
 The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
 
 ie:
@@ -75,7 +75,7 @@ ie:
 [a, b, c].shift() returns a and the array is set to [b, c]
 
 
-### push():
+### 0(1) push():
 Adds an item to the end of an array.
 
 Ie:
@@ -83,7 +83,7 @@ Ie:
 [1, 2 , 3].push('test') returns [1, 2, 3, 'test]
 [1, 2 , 3].push(4) returns [1, 2, 3, 4]
 
-### unshift():
+### 0(n) unshift():
 Adds an item to the start of an array
 
 Ie:
@@ -98,7 +98,7 @@ Ie:
 [a, b, c].includes(b) returns true
 [a, b, c].includes(d) returns false
 
-### indexOf():
+### 0(n) indexOf():
 Returns the index of an item within the array.
 
 Ie:
@@ -106,7 +106,7 @@ Ie:
 [a, b, c, d, e].indexOf(e) returns 4
 [a, b, c].indexOf(z) returns null
 
-### every():
+### 0(n) every():
 The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
 
 Ie:
@@ -134,7 +134,7 @@ ie:
 “Good morning”.charAt(2) returns 77
 
 
-### concat():
+### 0(n) concat():
 concatenates characters to the end of a string
 
 ie:
@@ -150,7 +150,7 @@ ie:
 "lol".includes(l) returns true
 "test".includes(l) returns false
 
-### indexOf():
+### 0(n) indexOf():
 returns the index of character in a string
 
 ie:
@@ -186,7 +186,7 @@ ie:
 ### search():
 The search() method executes a search for a match between a regular expression and this String object.
 
-### slice():
+### 0(n) slice():
 The slice() method extracts a section of a string and returns it as a new string, without modifying the original string.
 
 ie:
